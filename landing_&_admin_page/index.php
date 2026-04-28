@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <style>
-         body {
+        body {
             background-color:black;
             display: flex;
             justify-content: center;
         }
-        .box {
+        #box {
             background-color: whitesmoke;
             border-radius: 50px;
             width: 1444px;
@@ -110,7 +110,7 @@
     </style>
 </head>
 <body>
-    <div class="box">
+    <div id="box">
         <div class="header">
             <div class="icon">
                 <img src="icon_1.png" alt="">
@@ -124,7 +124,7 @@
                 <h1>Kessoku Band!</h1>
                 <p>Kessoku Band (結束バンド Kessoku Bando) is the main unit band of Bocchi the Rock! series. The name "Kessoku Band" is a pun on "Kessoku" (unity) and "Kessoku Band" (cable tie). The band has been drawn as the center of this work. The unit band is based in Shimokitazawa's live house STARRY, where Nijika's older sister, Seika, is a store manager.</p>
                  <div class="button">
-                    <<a href="admin_page.php">Learn More</a>
+                    <a href="admin_page.php">Learn More</a>
                 </div>
             </div>
             <div class="image">
