@@ -70,7 +70,7 @@
 <body>
     <div class="box">
         <div class="header">
-            <h1>Sign Up</h1>
+            <h1>Login</h1>
         </div>
         <form method="POST" action="get_data_login.php">
             <div class="form">

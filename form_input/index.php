@@ -109,7 +109,7 @@
                 <input type="password" name="inputconfirmpassword" id="inputconfirmpassword" required></input>
             </div>
             <div class="form-dropdown">
-                <label for="inputrole">Select Role</label>
+                <label for="inputrole">SELECT ROLE</label>
                 <select name="inputrole" id="inputrole" required>
                     <option value="brawler">Brawler</option>
                     <option value="shooter">Shooter</option>
@@ -118,7 +118,7 @@
                 </select>
             </div>
             <div class="form">
-                <label for="inputdate">Your Birthday</label>
+                <label for="inputdate">BIRTHDAY</label>
                 <input type="date" name="inputdate" id="inputdate" required/>
             </div>
             <div class="form-check">
@@ -134,7 +134,7 @@
                 <input class="form-check-input" type="radio" name="inputgender" id="flexRadioDefault2" checked>
             </div>
             <div class="form">
-                <label for="inputaddress">Address</label>
+                <label for="inputaddress">ADDRESS</label>
                 <textarea name="inputaddress" id="inputaddress" rows="4" cols="50" required></textarea>
             </div>
             <div class="form-submit">
