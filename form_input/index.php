@@ -20,7 +20,7 @@
         background-color: whitesmoke;
         border-radius: 50px;
         width: 50vw;
-        height: 620px;
+        height: 920px;
         padding: 50px;
         margin: 20px;
         box-shadow: 4px 7px 11px 0px rgba(0, 0, 0, 0.45);
@@ -79,6 +79,11 @@
         font-size: 18px;
         font-weight: bold;
     }
+    .form-check {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2vw;
+    }
     </style>
 </head>
 <body>
@@ -89,7 +94,7 @@
         <form method="POST" action="get_data_reg.php">
             <div class="form">
                 <label for="inputusername">USERNAME</label> 
-                <input type="text" name="inputusername" id="inputusername"></input>
+                <input type="text" name="inputusername" id="inputusername" required></input>
             </div>
             <div class="form">
                 <label for="inputemail">EMAIL</label>
@@ -97,19 +102,40 @@
             </div>
             <div class="form">
                 <label for="inputpassword">CREATE PASSWORD</label>
-                <input type="password" name="inputpassword" id="inputpassword"></input>
+                <input type="password" name="inputpassword" id="inputpassword" required></input>
             </div>
             <div class="form">
                 <label for="inputconfirmpassword">CONFIRM PASSWORD</label>
-                <input type="password" name="inputconfirmpassword" id="inputconfirmpassword"></input>
+                <input type="password" name="inputconfirmpassword" id="inputconfirmpassword" required></input>
             </div>
             <div class="form-dropdown">
-                <label for="inputgender">Select gender</label>
-                <select name="inputgender" id="inputgender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="rather-not-say">Rather Not Say</option>
+                <label for="inputrole">Select Role</label>
+                <select name="inputrole" id="inputrole" required>
+                    <option value="brawler">Brawler</option>
+                    <option value="shooter">Shooter</option>
+                    <option value="mage">Mage</option>
+                    <option value="support">Support</option>
                 </select>
+            </div>
+            <div class="form">
+                <label for="inputdate">Your Birthday</label>
+                <input type="date" name="inputdate" id="inputdate" required/>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                </label>
+                <input class="form-check-input" type="radio" name="inputgender" id="flexRadioDefault1">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                </label>
+                <input class="form-check-input" type="radio" name="inputgender" id="flexRadioDefault2" checked>
+            </div>
+            <div class="form">
+                <label for="inputaddress">Address</label>
+                <textarea name="inputaddress" id="inputaddress" rows="4" cols="50" required></textarea>
             </div>
             <div class="form-submit">
                 <input type="submit" placeholder="submit"/>
